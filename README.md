@@ -2,7 +2,9 @@
 
 Converts Toonily IDs to titles using the JSON created from [Paperback2Aidoku](https://github.com/kymotsujason/Paperback2Aidoku). Since Aidoku's Toonily source uses the `toonily.com/webtoon/id` URL, we can't use the Paperback Toonily IDs which use `toonily.com/?p=id`.
 
-Download and run the app from [releases](https://github.com/kymotsujason/ToonilyID2Title/releases/latest) (build is huge because electron)
+Download and run the app from [releases](https://github.com/kymotsujason/ToonilyID2Title/releases/latest).
+
+The build is huge and a bit slow to start because electron, but electron is required to get around the cors issue as I use HTTP GET requests to match and convert the IDs. A website encounters cors issues and I gave up trying to get around it. There are probably ways, but it wasn't worth additional hours.
 
 ## Getting Started (development)
 
